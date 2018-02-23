@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# strip fakeit from the args if it was passed
+CMD=$@
+CMD=${CMD#fakeit }
+fakeit $CMD
